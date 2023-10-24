@@ -1,8 +1,8 @@
 import {describe, expect, test} from '@jest/globals';
 
-import CategoryService from '../../services/category.service';
+import CategoryService from '../../src/services/category.service';
 
-import db from '../../database/models'
+import db from '../../src/database/models'
 
 const {Category} = db
 
