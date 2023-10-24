@@ -6,6 +6,8 @@
   "scripts": {
     "test": "NODE_ENV=test npm run migrate && jest",
     "start": "npm run migrate && node build/index.js",
+    "dev": "nodemon",
+    "build:render": "npm run build && npm install",
     "migrate": "sequelize db:migrate",
     "seed": "sequelize db:seed:all",
     "build": "tsc"
@@ -32,6 +34,7 @@
     "@types/node": "^20.8.8",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
+    "nodemon": "^3.0.1",
     "sequelize-cli": "^6.6.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
