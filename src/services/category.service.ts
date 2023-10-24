@@ -43,7 +43,7 @@ export default class CategoryService {
         }
 
         await Category.destroy({ where: { id } });
-        return { data: "Category has been removed successfuly", statusCode: 204 }
+        return { data: "Category has been removed successfully", statusCode: 204 }
 
     }
     public static async fetchChildCategories(parentId: string) {
